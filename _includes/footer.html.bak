@@ -1,0 +1,32 @@
+<footer>
+  {%- assign is_en = false -%}
+  {%- if page.url contains '/en/' or page.permalink contains '/en/' or page.path contains 'en/' or page.lang == 'en' -%}
+    {%- assign is_en = true -%}
+  {%- endif -%}
+
+  {%- if is_en -%}
+    <!-- Se estiver em INGLÊS -> mostra link para Português -->
+    {%- if page.ref -%}
+      {%- assign pt_post = site.posts | where: "ref", page.ref | where_exp: "item", "item.lang != 'en'" | first -%}
+      {%- if pt_post -%}
+        <a href="{{ pt_post.url | relative_url }}">pt-br</a>
+      {%- else -%}
+        <a href="{{ '/' | relative_url }}">pt-br</a>
+      {%- endif -%}
+    {%- else -%}
+      <a href="{{ '/' | relative_url }}">pt-br</a>
+    {%- endif -%}
+  {%- else -%}
+    <!-- Se estiver em PORTUGUÊS -> mostra link para English -->
+    {%- if page.ref -%}
+      {%- assign en_post = site.posts | where: "ref", page.ref | where: "lang", "en" | first -%}
+      {%- if en_post -%}
+        <a href="{{ en_post.url | relative_url }}">english</a>
+      {%- else -%}
+        <a href="{{ '/en/' | relative_url }}">english</a>
+      {%- endif -%}
+    {%- else -%}
+      <a href="{{ '/en/' | relative_url }}">english</a>
+    {%- endif -%}
+  {%- endif -%}
+</footer>

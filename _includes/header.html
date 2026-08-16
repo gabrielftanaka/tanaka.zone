@@ -1,0 +1,23 @@
+{%- assign is_en = false -%}
+
+{%- if page.url contains '/en' or page.permalink contains '/en' or page.path contains 'en/' or page.lang == 'en' -%}
+  {%- assign is_en = true -%}
+{%- endif -%}
+
+<header>
+  <div class="menu">
+    <ul>
+      {%- if is_en -%}
+        <li><a href="/en/whoami/">whoami</a></li>
+        <li><a href="/en/research/">research</a></li>
+        <li><a href="/en/writeups/">writeups</a></li>
+        <li><a href="/en/">/</a></li>
+      {%- else -%}
+        <li><a href="/whoami/">whoami</a></li>
+        <li><a href="/research/">research</a></li>
+        <li><a href="/writeups/">writeups</a></li>
+        <li><a href="/">/</a></li>
+      {%- endif -%}
+    </ul>
+  </div>
+</header>

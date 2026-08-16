@@ -1,0 +1,45 @@
+<footer>
+  {%- assign is_en = false -%}
+  {%- if page.url contains '/en/' or page.permalink contains '/en/' or page.path contains 'en/' or page.lang == 'en' -%}
+    {%- assign is_en = true -%}
+  {%- endif -%}
+
+  {%- if is_en -%}
+    
+    {%- if page.ref -%}
+      {%- assign pt_post = site.posts | where: "ref", page.ref | where_exp: "item", "item.lang != 'en'" | first -%}
+      {%- if pt_post -%}
+        {%- assign target_url = pt_post.url -%}
+      {%- else -%}
+        {%- assign target_url = "/" -%}
+      {%- endif -%}
+    {%- else -%}
+      
+      {%- assign target_url = page.url | replace_first: '/en/', '/' -%}
+      {%- if target_url == "" -%}{%- assign target_url = "/" -%}{%- endif -%}
+    {%- endif -%}
+
+    <a href="{{ target_url | relative_url }}">pt-br</a>
+
+  {%- else -%}
+    
+    {%- if page.ref -%}
+      {%- assign en_post = site.posts | where: "ref", page.ref | where: "lang", "en" | first -%}
+      {%- if en_post -%}
+        {%- assign target_url = en_post.url -%}
+      {%- else -%}
+        {%- assign target_url = "/en/" -%}
+      {%- endif -%}
+    {%- else -%}
+      
+      {%- if page.url == "/" -%}
+        {%- assign target_url = "/en/" -%}
+      {%- else -%}
+        {%- assign target_url = "/en" | append: page.url -%}
+      {%- endif -%}
+    {%- endif -%}
+
+    <a href="{{ target_url | relative_url }}">english</a>
+
+  {%- endif -%}
+</footer>

@@ -1,0 +1,21 @@
+{%- assign default_paths = site.html_pages | map: 'path' -%}
+{%- assign page_paths = site.header_pages | default: default_paths -%}
+<header>
+  <div class="menu">
+    <ul>
+      {%- if page.url contains '/en/' -%}
+        <!-- LINKS QUANDO ESTIVER NA VERSÃO EM INGLÊS -->
+        <li><a href="{{ '/en/whoami/' | relative_url }}"{% if page.url == '/en/whoami/' %} aria-current="page"{% endif %}>whoami</a></li>
+        <li><a href="{{ '/en/research/' | relative_url }}"{% if page.url == '/en/research/' %} aria-current="page"{% endif %}>research</a></li>
+        <li><a href="{{ '/en/writeups/' | relative_url }}"{% if page.url == '/en/writeups/' %} aria-current="page"{% endif %}>writeups</a></li>
+        <li><a href="{{ '/en/' | relative_url }}"{% if page.url == '/en/' %} aria-current="page"{% endif %}>/</a></li>
+      {%- else -%}
+        <!-- LINKS QUANDO ESTIVER NA VERSÃO EM PORTUGUÊS -->
+        <li><a href="{{ '/whoami/' | relative_url }}"{% if page.url == '/whoami/' %} aria-current="page"{% endif %}>whoami</a></li>
+        <li><a href="{{ '/research/' | relative_url }}"{% if page.url == '/research/' %} aria-current="page"{% endif %}>research</a></li>
+        <li><a href="{{ '/writeups/' | relative_url }}"{% if page.url == '/writeups/' %} aria-current="page"{% endif %}>writeups</a></li>
+        <li><a href="{{ '/' | relative_url }}"{% if page.url == '/' %} aria-current="page"{% endif %}>/</a></li>
+      {%- endif -%}
+    </ul>
+  </div>
+</header>
