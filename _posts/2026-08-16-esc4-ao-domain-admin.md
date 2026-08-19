@@ -6,7 +6,7 @@ categories: [writeup, active-directory]
 lang: pt
 ref: adcs-esc1
 permalink: /posts/adcs-esc1
-excerpt: "O Active Directory Certificate Services (AD CS) é uma das tecnologias mais poderosas, e quando mal configurada, uma das mais perigosas dentro de um ambiente AD. Nesse artigo, vou abordar um cenário que encontrei durante meus estudos em AD, envolvendo uma cadeia de exploração envolvendo ESC4 -> ESC1."
+excerpt: "O Active Directory Certificate Services (AD CS) é uma das tecnologias mais poderosas, e quando mal configurada, uma das mais perigosas dentro de um ambiente AD. Nesse artigo, vou abordar um cenário que encontrei durante meus estudos em AD, envolvendo uma cadeia de exploração ESC4 -> ESC1."
 ---
 
 # {{ page.title }}
