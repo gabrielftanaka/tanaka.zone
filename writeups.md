@@ -4,7 +4,19 @@ title: writeups
 permalink: /writeups/
 ---
 
-Writeups de máquinas (HTB/THM), desafios de CTF, relatórios de bug bounty, dicas práticas e anotações de certificações.
+<div class="ascii-wrapper">
+<pre class="ascii-art">
+██ ██ ██ ██▀▀▀▀▀█ ▀▀▀▀█▀▀▀ ██▀▀▀▀▀█ ██▀▀▀▀▀█ ██    ██ ██▀▀▀▀▀█ ██▀▀▀▀▀▀
+▒█ ▒█ ▒█ ▒█▀▀▀▀█▀    ▒█          ▒█ ▒█▀▀▀    ▒█    ▒█ ▒█▀▀▀▀▀▀ ▀▀▀▀▀▀▀█
+▓▓ ▓▓ ▓▓ ▓▓   ▀▀▓    ▓▓          ▓▓ ▓▓       ▓▓    ▓▓ ▓▓             ▓▓
+█▒ █▒ █▒ █▒    █▒    █▒          █▒ █▒       █▒    █▒ █▒       █▒    █▒
+▓░ ▓░ ▓░ ▓░    ▓░    ▓░          ▓░ ▓░       ▓░    ▓░ ▓░       ▓░    ▓░
+▒█ ▒█ ▒█ ▒█    ▒█    ▒█          ▒█ ▒█       ▒█    ▒█ ▒█       ▒█    ▒█
+░▓ ░▓ ░▓ ░▓    ░▓    ░▓          ░▓ ░▓       ░▓    ░▓ ░▓       ░▓    ░▓
+ ▒  ▒  ▒  ▒     ▒     ▒           ▒  ▒    ▄▄  ▒     ▒  ▒        ▒     ▒
+▀▀▀▀▀▀▀▀ ▀▀    ▀▀ ▀▀▀▀▀▀▀▀       ▀▀ ▀▀▀▀▀▀▀▀ ▀▀▀▀▀▀▀▀ ▀▀       ▀▀▀▀▀▀▀▀
+</pre>
+</div>
 
 ---
 

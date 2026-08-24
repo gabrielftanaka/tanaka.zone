@@ -6,11 +6,11 @@ permalink: /whoami/
 
 Meu nome é Gabriel Tanaka, sou estudante de Engenharia de Computação e graduado em Segurança Cibernética.
 
-Atuo na área de Cybersecurity a um pouco mais de um ano, com foco em segurança ofensiva.
+Atuo na área de Cybersecurity há pouco mais de um ano, com foco em segurança ofensiva.
 
 Tenho muito interesse em pentest, bug bounty, malware analysis e binary exploitation.
 
-Nesse site, publico pesquisas, writeups, lab notes e muito mais, como forma de documentar o meu progresso. :)
+Neste site, publico pesquisas, writeups, lab notes e muito mais, como forma de documentar o meu progresso. :)
 
 ### Links
 
