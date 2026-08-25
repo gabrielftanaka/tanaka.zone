@@ -134,32 +134,37 @@ pre { background-color: var(--background-color);  border: none;  padding: 0;  ma
 .ascii-wrapper {
   display: flex;
   justify-content: center;
-  align-items: center;
   width: 100%;
   margin: 2.5rem 0;
-  overflow-x: auto;
+  overflow: hidden;
 }
 
 .ascii-art {
-  font-family: monospace !important;
+  font-family: "Courier New", Courier, monospace !important;
   font-size: 13px !important;
   line-height: 1.15 !important;
-  letter-spacing: 0px !important;
+  letter-spacing: 0 !important;
   white-space: pre !important;
   text-align: left !important;
+
   background: transparent !important;
   border: none !important;
   padding: 0 !important;
   margin: 0 !important;
+
   color: inherit;
+
+  display: inline-block;
+  flex: 0 0 auto;
+  transform-origin: top center;
 }
 
 @media (max-width: 768px) {
   .ascii-art {
-    font-size: 1.8vw !important;
+    transform: scale(0.62);
   }
 
   .ascii-wrapper {
-    overflow-x: hidden;
+    height: 135px;
   }
 }
