@@ -153,13 +153,3 @@ pre { background-color: var(--background-color);  border: none;  padding: 0;  ma
   margin: 0 !important;
   color: inherit;
 }
-
-@media (max-width: 768px) {
-  .ascii-art {
-    font-size: 1.8vw !important;
-  }
-
-  .ascii-wrapper {
-    overflow-x: hidden;
-  }
-}
