@@ -167,7 +167,7 @@ certipy find \
 
 <br>
 
-Exemplo de output:
+Output:
 
 ```text
 ...

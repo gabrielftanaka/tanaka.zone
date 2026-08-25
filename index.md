@@ -1,5 +1,5 @@
 ---
-title: /
+title: tanaka
 layout: default
 permalink: /
 ---

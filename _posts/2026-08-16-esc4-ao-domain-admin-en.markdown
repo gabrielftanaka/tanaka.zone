@@ -24,7 +24,7 @@ excerpt: "Active Directory Certificate Services (AD CS) is one of the most power
 
 ---
 
-Active Directory Certificate Services (AD CS) is one of the most powerful technologies, and when misconfigured, one of the most dangerous within an AD environment. In this article, I will cover a scenario I came across during my AD studies, involving an exploitation chain involving ESC4 -> ESC1.
+Active Directory Certificate Services (AD CS) is one of the most powerful technologies, and when misconfigured, one of the most dangerous within an AD environment. In this article, I will cover a scenario I came across during my AD studies, involving an exploitation chain ESC4 -> ESC1.
 
 ---
 

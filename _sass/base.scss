@@ -142,14 +142,24 @@ pre { background-color: var(--background-color);  border: none;  padding: 0;  ma
 
 .ascii-art {
   font-family: "Courier New", Courier, monospace !important;
-  font-size: 13px !important;    /* 11px a 13px garante que o texto caiba na largura sem quebrar */
-  line-height: 1.15 !important;   /* Essencial: remove espaçamento vertical entre as linhas */
-  letter-spacing: 0px !important;/* Remove espaçamento horizontal entre blocos */
-  white-space: pre !important;   /* Força o navegador a NUNCA quebrar a linha */
-  text-align: left !important;   /* O texto interno precisa ser left para alinhar a grade */
+  font-size: 13px !important;
+  line-height: 1.15 !important;
+  letter-spacing: 0px !important;
+  white-space: pre !important;
+  text-align: left !important;
   background: transparent !important;
   border: none !important;
   padding: 0 !important;
   margin: 0 !important;
   color: inherit;
+}
+
+@media (max-width: 768px) {
+  .ascii-art {
+    font-size: 1.8vw !important;
+  }
+
+  .ascii-wrapper {
+    overflow-x: hidden;
+  }
 }
