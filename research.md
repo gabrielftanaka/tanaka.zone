@@ -22,13 +22,14 @@ permalink: /research/
 
 ### **CVEs & Vulnerability Research:**
 
-<ul>
-{% for post in site.categories.research %}
-  <li>
+<ul style="list-style: none; padding-left: 0; margin: 0;">
+{% assign pt_research = site.categories.research | where_exp: "item", "item.lang != 'en'" %}
+{% for post in pt_research %}
+  <li style="margin-bottom: 0.4rem;">
     <span>[ {{ post.date | date: "%Y-%m-%d" }} ]</span>
     <a href="{{ post.url }}">{{ post.title }}</a>
   </li>
 {% else %}
-  <p>Nenhuma pesquisa publicada ainda.</p>
+  <li><p>Nenhuma pesquisa publicada ainda.</p></li>
 {% endfor %}
 </ul>
